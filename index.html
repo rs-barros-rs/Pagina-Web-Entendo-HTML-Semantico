@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENTENDENDO HTML SEMÂNTICO</title>
+</head>
+<body>
+    <h1>ENTENDENDO HTML SEMÂNTICO</h1>
+    <hr/>
+    <h2>Índice</h2>
+    <ul>
+        <li><a href="#HTML">HTML - Semântica + Acessibilidade</a></li>
+        <li><a href="#Mudanças">Mudanças do HTML 5</a></li>
+        <li><a href="#Acessibilidade">Acessibilidade</a></li>
+        <li><a href="#Web">Web Scraping</a></li>
+        <li><a href="#Main-Header-e-Footer"> Main, Header e Footer</a></li>
+        <li><a href="#Aside-Section-e-Nav">Aside, Section e Nav</a></li>
+        <li><a href="#Article-Blockquote-e-Q">Article, Blockquote e Q</a></li>
+        <li><a href="#Figure-Figcaption-e-Picture">Figure, Figcaption e Picture</a></li>
+    </ul>
+    <h2 id="HTML">HTML - Semântica + Acessibilidade</h2>
+        <p>
+        Definição de semântica: A semântica, no contexto da linguística, é o estudo do significado das palavras, frases e enunciados. É uma disciplina que busca entender como a linguagem transmite sentido, analisando as relações entre as expressões linguísticas e o que elas representam. A semântica se preocupa com a interpretação e o significado das palavras, tanto em seus contextos individuais quanto em relação ao todo de um texto ou discurso. 
+        </p>
+
+    <h2 id="Mudanças">Mudanças do HTML 5</h2>
+        <p>
+        Mudanças estão informadas no site da w3 → https://www.w3.org/TR/html5-diff/ 
+        A ideia é do html focar cada vez menos em formatação (função que fica para o CSS) e focar mais em estruturação. As tags depreciadas aparecem em vermelho, ainda que estejam corretas. em alguns anos os navegadores deixarão de dar suporte e ler essas tags. 
+        </p>
+    <h2 id="Acessibilidade">Acessibilidade</h2>
+        <p>
+        A acessibilidade do site geralmente é dependente da estruturação feita no html.
+        A tag usada para descrever algo descrito em imagem é alt. 
+        </p>
+    <h2 id="Web">Web Scraping</h2>
+        <p>
+        O Rastreador / Crawler mais famoso é o Google bot. Ele vai indexando os sites. Por isso a busca do google é tão eficiente. O próprio Google varre os sites (uma vez que você solicita) criando uma teia web. Isso também torna o seu site mais relevante. Você pode inclusive pagar para que sua pagina seja exibida com maior evidência.
+        
+        O que é web scraping: Usar uma aplicação para extrair dados de um site para que as informações sejam analisadas.
+        No Brasil, o principal elemento jurídico que ampara essa questão é a LGPD. O web scraping não é hackear. Se trata de extração de informações públicas na web, não de informações guardadas em bases de dados protegidas. Sendo assim, a prática é legal.
+        </p>
+    <h2 id="Main-Header-e-Footer"> Main, Header e Footer</h2>
+        <p>
+        A tag main em HTML é um elemento semântico que representa o conteúdo principal de uma página web, excluindo conteúdo repetido como barras de navegação, rodapés, etc. É recomendado usar apenas um elemento main por documento. A tag main não deve ser usada como filho de elementos como article, aside, footer, header ou nav. 
+        Isso tudo faz parte das renovações do html 5 para melhorar e clarificar a leitura das páginas (por pessoas e por robôs) para uma melhor estruturação e indexação das páginas na internet do futuro.
+
+        A tag header em HTML é usada para definir um cabeçalho para uma seção de conteúdo, geralmente na parte superior de uma página ou seção. Ela pode conter elementos como título, logotipo, menu de navegação, ou informações introdutórias relacionadas ao conteúdo da seção.
+
+        A tag footer em HTML é usada para definir o rodapé de uma página web, seção ou artigo. Geralmente, o rodapé contém informações adicionais como direitos autorais, informações de contato, links de navegação, termos de serviço, entre outros. Embora não seja obrigatório usar a tag footer, ela é recomendada para adicionar significado semântico à estrutura da página e melhorar o SEO. 
+
+        </p>
+    <h2 id="Aside-Section-e-Nav">Aside, Section e Nav</h2>
+        <p>
+        A tag section em HTML5 é usada para definir seções dentro de um documento, agrupando conteúdo relacionado e criando uma estrutura lógica na página. Ela é um elemento semântico que ajuda a organizar o conteúdo e a tornar a estrutura do documento mais clara e acessível. Ao contrário da tag div, que é genérica, section tem um significado semântico, indicando que o conteúdo agrupado é uma seção da página. Uma página inicial pode ter seções para introdução, serviços, clientes, etc. Um artigo pode ter seções para introdução, desenvolvimento, conclusão. 
+
+        A tag aside em HTML define um bloco de conteúdo que está relacionado ao conteúdo principal, mas que poderia ser considerado separado dele, como barras laterais, citações ou anúncios. Normalmente, o conteúdo dentro de aside é exibido como uma seção separada, muitas vezes em uma barra lateral, e serve para fornecer informações adicionais ou contexto ao conteúdo principal. É frequentemente usada para criar barras laterais, mas pode ser usada em outras áreas da página. Exemplos: Informações adicionais, citações, anúncios, links relacionados, glossários.  Seu conteúdo é semanticamente menos relevante do que o da tag section. 
+
+        A tag nav em HTML é usada para definir uma seção de navegação em um documento, como menus, índices ou tabelas de conteúdo. Ela é um elemento semântico, indicando aos navegadores e ferramentas de acessibilidade que o conteúdo dentro dela é um conjunto de links de navegação principal. A tag nav agrupa links de navegação em um documento HTML, como menus, índices, tabelas de conteúdo, etc. Não todos os links precisam estar dentro de um nav: A tag nav é destinada para os principais blocos de links de navegação. 
+        </p>
+    <h2 id="Article-Blockquote-e-Q">Article, Blockquote e Q </h2>
+        <p>
+        A tag article em HTML é um elemento semântico que representa uma composição independente em um documento, página, aplicação ou site, e que é destinada a ser distribuída de forma independente ou reutilizável. É comumente usada para marcar conteúdo que poderia ser distribuído separadamente, como posts de blog, notícias ou artigos de revista. O elemento article deve conter conteúdo que faça sentido por si só, sem a necessidade de contexto adicional. 
+        Você pode colocar articles dentro de outro. Semanticamente se entende que a tag filha tem relação com a tag pai.
+
+        A tag blockquote em HTML é utilizada para indicar um trecho de texto que foi retirado de outra fonte, ou seja, uma citação longa. Ela serve para diferenciar visualmente o texto citado do restante do conteúdo da página, geralmente aplicando um recuo à esquerda e/ou à direita no trecho citado. Semanticamente ajuda a estruturar o conteúdo da página, deixando claro que uma seção é uma citação. O atributo cite dentro de blockquote pode ser usado para fornecer um link para a fonte original da citação, enquanto a tag cite é usada para marcar o título ou referência do trabalho citado. O atributo só possui função de indexação. A fonte não é exibida na página. 
+
+        A tag q em HTML é utilizada para indicar que o texto contido é uma citação curta, ou seja, uma pequena passagem que foi retirada de outra fonte. Os navegadores geralmente exibem essa citação entre aspas duplas, mas isso pode ser customizado com CSS. O atributo cite também funciona aqui.
+
+        </p>
+    <h2 id="Figure-Figcaption-e-Picture">Figure, Figcaption e Picture</h2>
+        <p>
+            A tag figure em HTML é um elemento semântico usado para marcar conteúdo autocontido, como imagens, diagramas, fotos, listas de código, etc., que fazem parte do conteúdo principal de uma página, mas que podem ser movidos para fora do fluxo normal da página sem afetar o significado do conteúdo. É frequentemente usada em conjunto com a tag figcaption para fornecer uma legenda para o conteúdo da figura. 
+
+            A tag figcaption em HTML é usada para definir uma legenda para um elemento figure. Basicamente, ela serve para fornecer uma descrição ou título para o conteúdo contido dentro de um elemento figure, como uma imagem, um vídeo, um gráfico, um trecho de código, etc. Diferente da alt, a figcaption é exibida ao usuário da web.
+
+            A tag picture no HTML5 é usada para fornecer imagens responsivas, permitindo que o navegador escolha a melhor imagem para exibir com base em critérios como tamanho da tela ou tipo de dispositivo. Ela funciona como um contêiner para várias tags <source> e uma tag <img> como fallback. 
+
+        </p>
+</body>
+</html>
